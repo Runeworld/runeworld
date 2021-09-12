@@ -50,18 +50,9 @@ a:hover {
     filter: brightness(150%);
 }
 
-::before {
-    display: block;
-    font-weight: bold;
-}
-
 /* Classes */
 
 .narration {
-}
-
-.narration::before {
-    content: "Narration: ";
 }
 
 .thought {
@@ -76,14 +67,6 @@ a:hover {
     color: rgb(145, 218, 145);
 }
 
-.player::before {
-    content: "Player: ";
-}
-
 .guard {
     color: khaki;
-}
-
-.guard::before {
-    content: "Guard: ";
 }
