@@ -1,0 +1,89 @@
+:root {
+    --main-bg-color: rgb(31, 31, 31);
+    --main-text-color: rgb(197, 197, 197);
+}
+
+body {
+    background-color: var(--main-bg-color);
+    color: var(--main-text-color);
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px auto;
+    max-width: 800px;
+    padding: 0px 20px;
+}
+
+nav {
+    width: 100%;
+    border-top: 1px solid var(--main-text-color);
+}
+
+ul {
+    list-style: none;
+    padding: 0px;
+    column-count: 2;
+}
+
+li {
+    margin: 0px;
+    padding: 0px;
+    display: inline-block;
+    width: 90%;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: var(--main-bg-color);
+    background-color: var(--main-text-color);
+    padding: 5px;
+    margin: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    width: 100%;
+    display: inline-block;
+}
+
+a:hover {
+    filter: brightness(150%);
+}
+
+::before {
+    display: block;
+    font-weight: bold;
+}
+
+/* Classes */
+
+.narration {
+}
+
+.narration::before {
+    content: "Narration: ";
+}
+
+.thought {
+    font-style: italic;
+}
+
+.speech {
+
+}
+
+.player {
+    color: rgb(145, 218, 145);
+}
+
+.player::before {
+    content: "Player: ";
+}
+
+.guard {
+    color: khaki;
+}
+
+.guard::before {
+    content: "Guard: ";
+}
