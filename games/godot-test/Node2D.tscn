@@ -1,0 +1,20 @@
+[gd_scene load_steps=2 format=3 uid="uid://c6l8l3drdi0m3"]
+
+[ext_resource type="Script" path="res://Game.gd" id="1"]
+
+[node name="UserInterfaceControl" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( "1" )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TimeAndDateLabel" type="Label" parent="."]
+anchor_bottom = 0.023
+text = "default text"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="WeatherLabel" type="Label" parent="."]
