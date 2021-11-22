@@ -3,18 +3,33 @@
 [ext_resource type="Script" path="res://Game.gd" id="1"]
 
 [node name="UserInterfaceControl" type="Control"]
-anchor_right = 1.0
-anchor_bottom = 1.0
+offset_right = 1024.0
+offset_bottom = 600.0
 script = ExtResource( "1" )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="TimeAndDateLabel" type="Label" parent="."]
-anchor_bottom = 0.023
-text = "default text"
+offset_right = 192.0
+offset_bottom = 26.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 3
+theme_override_font_sizes/font_size = 16
+text = "TimeAndDateLabel"
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="WeatherLabel" type="Label" parent="."]
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -192.0
+offset_bottom = 26.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 3
+text = "WeatherLabel"
+align = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}

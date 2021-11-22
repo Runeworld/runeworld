@@ -2,7 +2,7 @@ class_name Gametime
 
 const REALTIME_SECONDS_TO_INGAME_MINUTES_RATIO = 50000
 
-enum Season { SPRING, SUMMER, FALL, WINTER }
+enum Season { SPRING, SUMMER, FALL, WINTER } # TODO: Replace with Season.gd
 enum Weekday { MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY }
 enum Daytime { NIGHT, EARLY_MORNING, LATE_MORNING, EARLY_AFTERNOON, LATE_AFTERNOON, EVENING }
 enum Month { JANUARY, FEBRUARY, MARCH, APRIL, MAY, JUNE, JULY, AUGUST, SEPTEMBER, OCTOBER, NOVEMBER, DECEMBER }
@@ -72,12 +72,11 @@ func timestep_gametime(ingame_minutes):
 
 
 func get_pretty_string():
-	var datetime_format = """
-		Daytime: {hour}:{minute} - {daytime}
-		Weekday: {weekday}
-		Month: {month}
-		Season: {season}
-		Day of adventure: {day}
-		Year of adventure: {year}
+	var datetime_format = """Daytime: {hour}:{minute} - {daytime}
+	Weekday: {weekday}
+	Month: {month}
+	Season: {season}
+	Day of adventure: {day}
+	Year of adventure: {year}
 	"""
 	return datetime_format.format({"day": total_days + 1, "hour": "%02d" % daytime_hour, "minute": "%02d" % daytime_minute, "daytime": Daytime.keys()[daytime].capitalize(), "weekday": Weekday.keys()[weekday].capitalize(), "month": Month.keys()[month_of_year].capitalize(), "season": Season.keys()[season_of_year].capitalize(), "year": total_years + 1})

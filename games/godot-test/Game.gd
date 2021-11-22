@@ -15,6 +15,7 @@ func update_gamestate(time_delta):
 # Do not manipulate data here, only hand it over to nodes to be displayed
 func update_visuals():
 	time_and_date_label.text = current_time.get_pretty_string()
+	weather_label.text = "weather label"
 
 # Called every frame with delta = frametime
 func _process(delta):

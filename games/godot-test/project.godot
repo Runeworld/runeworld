@@ -10,6 +10,11 @@ config_version=4
 
 _global_script_classes=[{
 "base": "RefCounted",
+"class": &"Climate",
+"language": &"GDScript",
+"path": "res://Climate.gd"
+}, {
+"base": "RefCounted",
 "class": &"Debug",
 "language": &"GDScript",
 "path": "res://Debug.gd"
@@ -23,11 +28,30 @@ _global_script_classes=[{
 "class": &"Gametime",
 "language": &"GDScript",
 "path": "res://Gametime.gd"
+}, {
+"base": "RefCounted",
+"class": &"Region",
+"language": &"GDScript",
+"path": "res://Region.gd"
+}, {
+"base": "RefCounted",
+"class": &"Season",
+"language": &"GDScript",
+"path": "res://Season.gd"
+}, {
+"base": "RefCounted",
+"class": &"Weather",
+"language": &"GDScript",
+"path": "res://Weather.gd"
 }]
 _global_script_class_icons={
+"Climate": "",
 "Debug": "",
 "Game": "",
-"Gametime": ""
+"Gametime": "",
+"Region": "",
+"Season": "",
+"Weather": ""
 }
 
 [application]
