@@ -1,9 +1,0 @@
-res://Climate.gd
-res://Debug.gd
-res://Game.gd
-res://Gametime.gd
-res://Node2D.tscn
-res://Region.gd
-res://Season.gd
-res://Weather.gd
-res://WeightedProbabilityList.gd
